@@ -31,12 +31,12 @@
         android:textSize="17sp"
         android:text="Sensor por NFC"
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Sensor de Brujula"
         android:textAllCaps="false"
-        android:textSize="17sp"
-        android:text="Sensor de"
-        />
+        android:textSize="17sp" />
 
 </LinearLayout>
