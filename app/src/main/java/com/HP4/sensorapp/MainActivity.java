@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.HP4.sensorapp.Reco.RecoActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnReco, btnNFC, btnBruju;
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnReco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_Reco = new Intent(getApplicationContext(), Reco.class);
+                Intent intent_Reco = new Intent(getApplicationContext(), RecoActivity.class);
                 startActivity(intent_Reco);
             }
         });
