@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programs/sensorApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Programs/sensorApp/app/src/main/res/layout/reco_layout.xml" value="0.35260416666666666" />
+        <entry key="..\:/Storage/DOCUMENTS/AppsAndroid/sensorApp/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ricor/AndroidStudioProjects/sensorApp_1/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ricor/AndroidStudioProjects/sensorApp_1/app/src/main/res/layout/activity_sensor_nfc.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/ricor/AndroidStudioProjects/sensorApp_1/app/src/main/res/layout/reco_layout.xml" value="0.1" />
       </map>
     </option>
   </component>
