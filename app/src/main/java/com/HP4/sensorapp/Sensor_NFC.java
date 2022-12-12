@@ -38,7 +38,7 @@ public class Sensor_NFC extends AppCompatActivity {
     Context context;
     TextView edit_message;
     TextView nfc_content;
-    Button ActivateButton,button2;
+    Button ActivateButton, btnBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +47,13 @@ public class Sensor_NFC extends AppCompatActivity {
         edit_message = (TextView) findViewById(R.id.et);
         nfc_content = findViewById(R.id.tv_R);
         ActivateButton = findViewById(R.id.button);
-        button2= findViewById(R.id.button2);
+        btnBackButton = findViewById(R.id.btnBackButton);
         context = this;
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        btnBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent main = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(main);
+                finish();
             }
         });
 

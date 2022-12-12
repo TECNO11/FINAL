@@ -1,9 +1,9 @@
 package com.HP4.sensorapp.Reco;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +17,7 @@ import java.util.concurrent.Executor;
 public class RecoActivity extends AppCompatActivity {
     TextView txtBiometricManager;
     Button btnNewIntent;
+    ImageView btnBackButton;
 
     private BiometricPrompt biometricPrompt = null;
     private Executor executor = new MainThreadExecutor();
@@ -51,8 +52,9 @@ public class RecoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reco_layout);
+        setContentView(R.layout.activity_reco);
         txtBiometricManager = findViewById(R.id.txtBiometricManager);
+        btnBackButton = findViewById(R.id.btnBackButton);
         btnNewIntent = findViewById(R.id.btnNewIntent);
 
         if (biometricPrompt == null)
@@ -66,6 +68,13 @@ public class RecoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 BiometricPrompt.PromptInfo promptInfo = buildBiometricPrompt();
                 biometricPrompt.authenticate(promptInfo);
+            }
+        });
+
+        btnBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
