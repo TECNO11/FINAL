@@ -18,21 +18,23 @@
         />
 
     <Button
+        android:id="@+id/btnReco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:textSize="17sp"
         android:text="Autentificacion por reconocimiento facial y huella dactilar"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:textSize="17sp"
-        android:text="Sensor por NFC"
-        />
+        android:textSize="17sp" />
 
     <Button
+        android:id="@+id/btnNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor por NFC"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnBruju"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sensor de Brujula"
