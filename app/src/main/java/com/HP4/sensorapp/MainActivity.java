@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         btnNFC = findViewById(R.id.btnNFC);
         btnBruju = findViewById(R.id.btnBruju);
 
+        btnNFC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Reco = new Intent(getApplicationContext(), Sensor_NFC.class);
+                startActivity(intent_Reco);
+            }
+        });
         btnReco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
