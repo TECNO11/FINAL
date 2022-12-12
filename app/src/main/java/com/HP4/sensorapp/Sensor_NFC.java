@@ -53,8 +53,8 @@ public class Sensor_NFC extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_Reco = new Intent(getApplicationContext(), Sensor_NFC.class);
-                startActivity(intent_Reco);
+                Intent main = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(main);
             }
         });
 
