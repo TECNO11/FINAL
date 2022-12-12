@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
     tools:context=".Reco.RecoActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="15dp"
-        >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/btnBackButton"
@@ -21,17 +21,17 @@
             android:clickable="true"
             app:srcCompat="?attr/actionModeCloseDrawable" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center"
-        >
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/logoutp"
-            />
+            android:src="@drawable/logoutp" />
 
         <TextView
             android:id="@+id/txtBiometricManager"
@@ -39,16 +39,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:textSize="24sp"
-            android:text="FACE - ID" />
+            android:text="FACE - ID"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnNewIntent"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intente nuevamente"
-            />
+            android:visibility="gone" />
 
 
     </LinearLayout>

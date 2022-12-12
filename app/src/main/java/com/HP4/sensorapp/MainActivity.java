@@ -1,11 +1,11 @@
 package com.HP4.sensorapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.HP4.sensorapp.Reco.RecoActivity;
 
@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent_Reco = new Intent(getApplicationContext(), RecoActivity.class);
+                startActivity(intent_Reco);
+            }
+        });
+        btnBruju.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Reco = new Intent(getApplicationContext(), Brujula.class);
                 startActivity(intent_Reco);
             }
         });

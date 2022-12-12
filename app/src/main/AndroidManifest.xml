@@ -18,7 +18,7 @@
 
         <activity
             android:name=".Sensor_NFC"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -28,7 +28,15 @@
 
         <activity
             android:name=".Reco.RecoActivity"
-            android:exported="true" >
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Brujula"
+            android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

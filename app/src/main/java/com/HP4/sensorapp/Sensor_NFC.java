@@ -83,9 +83,8 @@ public class Sensor_NFC extends AppCompatActivity {
                 finish();
 
             }
-        }
-        catch (UnknownError e){
-            Log.e("eror","erorr");
+        } catch (UnknownError e) {
+            Log.e("eror", "erorr");
         }
 
 
@@ -147,7 +146,7 @@ public class Sensor_NFC extends AppCompatActivity {
         ndef.close();
     }
 
-    private NdefRecord createRecord (String text) throws UnsupportedEncodingException {
+    private NdefRecord createRecord(String text) throws UnsupportedEncodingException {
         String lang = "en";
         byte[] textBytes = text.getBytes();
         byte[] langBytes = lang.getBytes("US-ASCII");
@@ -172,7 +171,7 @@ public class Sensor_NFC extends AppCompatActivity {
         super.onNewIntent(intent);
         setIntent(intent);
         readFromIntent(intent);
-        if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())){
+        if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
             myTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
         }
     }
@@ -189,13 +188,13 @@ public class Sensor_NFC extends AppCompatActivity {
         WrieModeOn();
     }
 
-    private void WrieModeOn(){
-        writeMode =true;
-        nfcAdapter.enableForegroundDispatch(this,pendingIntent,WritingTagFilters,null);
+    private void WrieModeOn() {
+        writeMode = true;
+        nfcAdapter.enableForegroundDispatch(this, pendingIntent, WritingTagFilters, null);
     }
 
-    private void WrieModeOff(){
-        writeMode =false;
+    private void WrieModeOff() {
+        writeMode = false;
         nfcAdapter.disableForegroundDispatch(this);
     }
 
